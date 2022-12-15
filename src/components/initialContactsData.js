@@ -3,7 +3,7 @@ export const initialContacts = [
     id: 'id-1',
     name: 'Rosie Simpson',
     number: '459-12-56',
-    birthDate: '03.08.2011',
+    birthDate: '1981-12-26',
     notes: 'dndvkmdjncxjnmjscnjsnchbndchbhdcbhscbhbnscjncsjnmcjimsjckmckjmn',
   },
   {
@@ -11,7 +11,7 @@ export const initialContacts = [
     name: 'Hermione Kline',
     number: '443-89-12',
     relation: 'Family',
-    birthDate: '07.23.1969',
+    birthDate: '1963-11-05',
     notes: 'dflks dfljknsdfc dknkdnfv dfckjkndf',
   },
   {
@@ -19,13 +19,13 @@ export const initialContacts = [
     name: 'Eden Clements',
     number: '645-17-79',
     relation: 'Services',
-    birthDate: '11.22.2003',
+    birthDate: '1970-06-29',
   },
   {
     id: 'id-4',
     name: 'Annie Copeland',
     number: '227-91-26',
     relation: 'Colleagues',
-    birthDate: '09.20.1999',
+    birthDate: '1988-02-16',
   },
 ];

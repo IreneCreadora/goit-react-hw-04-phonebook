@@ -37,7 +37,7 @@ ContactItem.propTypes = {
     name: propTypes.string.isRequired,
     number: propTypes.string.isRequired,
     notes: propTypes.string.isRequired,
-    // birthDate: propTypes.string.isRequired,
+    birthDate: propTypes.string.isRequired,
     relation: propTypes.string.isRequired,
     importantContact: propTypes.bool.isRequired,
   }),

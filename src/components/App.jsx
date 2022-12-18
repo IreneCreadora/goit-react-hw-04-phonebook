@@ -34,21 +34,18 @@ export default function App() {
 
   const formSubmit = values => {
     console.log(values);
-    const isContact = contacts.find(
+    const isInContact = contacts.find(
       contact => contact.name.toLowerCase() === values.name.toLowerCase()
     );
-    if (isContact) {
+    if (isInContact) {
       alert(`${values.name} is already in contact`);
-      return contacts;
-    } else {
-      setContacts(state => {
-        const newContact = {
-          id: nanoid(),
-          ...values,
-        };
-        return [newContact, ...state];
-      });
+      return false;
     }
+    const newContact = { id: nanoid(), ...values };
+
+    setContacts(state => [newContact, ...state]);
+
+    return true;
   };
 
   const contactDelete = id => {

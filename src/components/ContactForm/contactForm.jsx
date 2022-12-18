@@ -12,7 +12,8 @@ import { validationSchema } from './yup-validation';
 
 const ContactForm = ({ onSubmit }) => {
   const handleSubmit = (values, { resetForm }) => {
-    onSubmit(values);
+    const isSuccessSubmit = onSubmit(values);
+    if (!isSuccessSubmit) return;
     resetForm();
   };
   return (
